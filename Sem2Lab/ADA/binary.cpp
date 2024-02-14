@@ -15,7 +15,6 @@ int BinarySearch(int arr[], int l, int h, int key){
 }
 
 void displayArr(int arr[], int n){
-	cout << "Array: ";
 	for( int i = 0; i < n; i ++ ){
 		cout << arr[i] << " ";	
 	}

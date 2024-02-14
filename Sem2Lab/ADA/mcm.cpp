@@ -1,17 +1,12 @@
 #include <iostream>
+#include <climits>
 #define N 50
 using namespace std;
 
-int dim[N];
-
-int m[N][N];
-
-int s[N][N];
+int dim[N], m[N][N], s[N][N];
 
 void pop(int i,  int j){
-	if( i == j ){
-		cout << "A" << i;
-	}
+	if( i == j ) cout << "A" << i; 
 	else{
 		cout << "( ";
 		pop(i, s[i][j]);
@@ -39,15 +34,13 @@ void mcm(int i, int j){
 }
 
 int main(){
-	int n;
+	int n, i, j, k;
 
 	cout << "Enter number of dimensions: ";
 	cin >> n;
 		
 	cout << "\nEnter dimensions: ";
-	for( int i = 0; i < n; i ++ ) cin >> dim[i];
-	
-	int i, j, k;
+	for(i = 0; i < n; i ++ ) cin >> dim[i];
 	
 	for(int x = 1; x < n; x ++){
 		j = x;
@@ -66,6 +59,7 @@ int main(){
 	}
 
 	cout << "\nTable S:\n";
+	
 	for(i = 1; i < n; i ++){
 		for(j = 1; j < n; j ++)
 			cout << s[i][j] << " ";	

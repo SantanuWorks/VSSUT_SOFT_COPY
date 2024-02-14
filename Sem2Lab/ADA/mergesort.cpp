@@ -1,7 +1,11 @@
 #include <iostream>
 using namespace std;
 
+int ctr = 0;
+
 void merge(int arr[], int l, int m, int h){
+	ctr ++;
+	
 	int n1, n2;
 	int i, j, k = l;
 	
@@ -76,4 +80,6 @@ int main(){
 	
 	cout << "\n\nSorted Array: ";
 	printarr(arr, n);
+	
+	cout << "\n\nTotal Comparisions: " << ctr;
 } 
