@@ -1,3 +1,5 @@
+// Write a c++ program to declare static member function and call them from main function.
+
 #include <iostream>
 using namespace std;
 

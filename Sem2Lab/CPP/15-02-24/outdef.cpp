@@ -1,3 +1,5 @@
+// Write a program in c++ to define member functions of outside the class.
+
 #include <iostream>
 using namespace std;
 

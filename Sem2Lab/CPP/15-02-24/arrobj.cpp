@@ -1,3 +1,5 @@
+// Write a c++ program to declare array of objects to store student details and show them.
+
 #include <iostream>
 using namespace std;
 

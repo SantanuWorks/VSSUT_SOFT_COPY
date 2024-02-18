@@ -1,3 +1,5 @@
+// Write a c++ program to count the number of vowels in a string.
+
 #include <iostream>
 using namespace std;
 

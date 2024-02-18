@@ -1,3 +1,5 @@
+// Write a c++ program to declare static member function in private section and access them.
+
 #include <iostream>
 using namespace std;
 

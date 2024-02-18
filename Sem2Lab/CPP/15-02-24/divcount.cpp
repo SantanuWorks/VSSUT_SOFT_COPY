@@ -1,3 +1,5 @@
+// Write a c++ program to count numbers between 1 and 100 which are not divisible by 2, 3, and 5.
+
 #include <iostream>
 using namespace std;
 

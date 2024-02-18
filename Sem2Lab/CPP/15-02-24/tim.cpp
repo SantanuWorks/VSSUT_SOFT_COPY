@@ -1,3 +1,5 @@
+// Write a c++ program to convert hours into minutes and seconds.
+
 #include <iostream>
 using namespace std;
 

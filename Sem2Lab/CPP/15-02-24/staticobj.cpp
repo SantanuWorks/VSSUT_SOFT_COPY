@@ -1,3 +1,5 @@
+// Write a c++ program to declare static object and display its content.
+
 #include <iostream>
 using namespace std;
 
