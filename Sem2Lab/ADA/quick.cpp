@@ -8,22 +8,22 @@ void displayarr(int arr[], int n){
 // 5 3 17 10 84 19 6 22 9
 
 int partition(int arr[], int l, int h){
-	int i = l + 1, j = h - 1;
-	int pivot = arr[l];
-	while(i < j){
-		while( i < h && arr[i] < pivot ) i ++;
-		while( j > l && arr[j] >= pivot ) j --;
-		
-		if( i < j ) swap(arr[i], arr[j]);
+	int pivot = arr[h];
+	int i = l - 1;
+	for(int j = l; j < h; j ++){
+		if( arr[j] <= pivot ){
+			i ++;
+			swap(arr[i], arr[j]);
+		}
 	}
-	arr[l] = arr[j];
-	arr[j] = pivot;
-	return j;
+	swap(arr[i+1], arr[h]);
+	return (i+1);	
 }
 
 void quicksort(int arr[], int l, int h){
+	int p;
 	if( l < h ){
-		int p = partition(arr, l, h);
+		p = partition(arr, l, h);
 		quicksort(arr, l, p-1);
 		quicksort(arr, p+1, h);
 	}
