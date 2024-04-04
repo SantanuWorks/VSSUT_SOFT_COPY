@@ -28,13 +28,15 @@ long long kruskal(pair<long long, pair<int, int> > p[])
 {    
     int x, y;    
     long long cost, minimumCost = 0;    
+    cout << "\nEdge\tCost\n";
     for(int i = 0;i < edges;++i)    
     {    
         x = p[i].second.first;    
         y = p[i].second.second;    
         cost = p[i].first;    
         if(root(x) != root(y))    
-        {    
+        {   
+        	cout << x << "-" << y << "\t" << cost << endl;
             minimumCost += cost;    
             union1(x, y);    
         }        

@@ -39,7 +39,7 @@ int main(){
 	b.getdata();
 	b.show();
 	c = a * b;
-	cout << "\Product is:\b";
+	cout << "\nProduct is:\b";
 	c.show();
 }
 
